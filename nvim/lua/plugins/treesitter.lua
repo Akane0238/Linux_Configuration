@@ -9,5 +9,10 @@ return {
 	  highlight = {	enable = true, additional_vim_regex_highlighting = false},
 	  rainbow = { enable = true, extended_mode = true, max_file_line = nil}
 	})
+
+    -- Disable diagnostic signs (W, E, etc.)
+    for _, sign in ipairs({ "DiagnosticSignError", "DiagnosticSignWarn", "DiagnosticSignHint", "DiagnosticSignInfo" }) do
+      vim.fn.sign_define(sign, { text = "", numhl = "", texthl = "" })
+    end
   end,
 }
