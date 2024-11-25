@@ -1,0 +1,8 @@
+[user]
+	name = akane
+	email = qweasd28848@gmail.com
+[init]
+	defaultBranch = main
+[alias]
+	s = status
+    l = log --oneline --decorate --graph --all
