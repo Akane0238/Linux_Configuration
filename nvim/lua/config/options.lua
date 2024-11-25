@@ -2,6 +2,7 @@ local opt = vim.opt
 
 -- Options
 opt.number = true
+opt.relativenumber = true
 opt.ignorecase = true
 opt.smartcase = true
 opt.hlsearch = true
