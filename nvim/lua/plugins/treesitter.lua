@@ -7,7 +7,8 @@ return {
 	  -- Add languages you need
 	  ensure_installed = { "lua", "cpp", "c", "go"},
 	  highlight = {	enable = true, additional_vim_regex_highlighting = false},
-	  rainbow = { enable = true, extended_mode = true, max_file_line = nil}
+	  rainbow = { enable = true, extended_mode = true, max_file_line = nil},
+      fold = { enable = true}
 	})
 
     -- Disable diagnostic signs (W, E, etc.)

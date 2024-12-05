@@ -16,7 +16,7 @@ return {
     -- mason-lspconfig configuration
     require("mason-lspconfig").setup {
 		-- lsp language server 
-		ensure_installed = { "lua_ls", "clangd", "gopls"}
+		ensure_installed = { "lua_ls", "clangd", "gopls", "pyright"}
     }
   end
 }

@@ -16,3 +16,8 @@ opt.breakindent = true
 
 opt.swapfile = false
 opt.clipboard = "unnamedplus"
+
+opt.foldmethod = "expr"                     -- Use an expression to define folds
+opt.foldexpr = "nvim_treesitter#foldexpr()" -- Use Tree-sitter's folding expression
+opt.foldenable = true
+opt.foldlevel  = 99
