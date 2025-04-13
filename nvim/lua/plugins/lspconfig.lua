@@ -19,6 +19,10 @@ return {
       vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)        -- Show references
       vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)      -- Previous diagnostic
       vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)      -- Next diagnostic
+      vim.keymap.set('n', 'gd', function()
+          local result = vim.lsp.buf_request_sync(0, "textDocument/definition", vim.lsp.util.make_position_params(), 1000)
+          print(vim.inspect(result))
+      end, { noremap = true })
     end
 
     -- Add other language server setups as needed
